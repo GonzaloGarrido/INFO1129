@@ -1,6 +1,6 @@
 <?php
     require_once('bd/conexion.php');
-    require_once('controlador/estudiante_controller.php');
+    require_once('controlador/mc_controller.php');
 
     $controller= new estudiante_controller();
     
