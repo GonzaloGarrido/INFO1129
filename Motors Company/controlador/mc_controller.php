@@ -18,6 +18,12 @@
             include_once('vistas/footer.php');
         }
 
+        function ayuda(){
+            include_once('vistas/header.php');
+            include_once('vistas/ayuda.php');
+            include_once('vistas/footer.php');
+        }
+
         function estudiante(){
             $data=NULL;
             if(isset($_REQUEST['id'])){
@@ -38,11 +44,9 @@
             $data['sexo']=$_REQUEST['txt_sexo'];
             $data['fechanacimiento']=$_REQUEST['txt_fechanacimiento'];
             $data['asignatura']=$_REQUEST['txt_asignatura'];
-           if ($_REQUEST['nombres']=="") {
-                $this->model_e->create($data);
-            }
-    
-
+            include_once('vistas/header.php');
+            include_once('vistas/estudiante.php');
+            include_once('vistas/footer.php');
     }
 }
 ?>

@@ -5,11 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--- Etiqueta responsividad -->
+  	<meta name="keywords" content="footer, address, phone, icons" />
 	<title>Speed Cars Chile</title>
 	<link rel="hortcut Icon" href="style/img/favicon.ico" type="image/x-icon" />
  	<link rel="stylesheet" href="style/css/bootstrap.min.css">
   	<link rel="stylesheet" href="style/css/bootstrap.css">
   	<link rel="stylesheet" href="style/css/index.css">
+  	<link rel="stylesheet" href="style/css/footer-distributed-with-address-and-phones.css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container">
@@ -30,11 +34,11 @@
 	          <div class="collapse navbar-collapse" id="navbar-1">
 	            <ul class="nav navbar-nav navbar-right">
 	              <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-	              <li><a href=""><span class="glyphicon glyphicon-th-list"></span> Sucursales</a></li>
-	              <li><a href=""><span class="glyphicon glyphicon-user"></span> Nosotros</a></li>
-	              <li><a href=""><span class="glyphicon glyphicon-phone-alt"></span> Contacto</a></li>
-	              <li><a href=""><span class="glyphicon glyphicon-comment"></span> Ayuda</a></li>
-	              <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Administrador</a></li>
+	              <li><a href="sucursales.php"><span class="glyphicon glyphicon-th-list"></span> Sucursales</a></li>
+	              <li><a href="nosotros.php"><span class="glyphicon glyphicon-user"></span> Nosotros</a></li>
+	              <li><a href="contacto.php"><span class="glyphicon glyphicon-phone-alt"></span> Contacto</a></li>
+	              <li><a href="index.php?m=ayuda"><span class="glyphicon glyphicon-comment"></span> Ayuda</a></li>
+	              <li><a href="admin.php"><span class="glyphicon glyphicon-log-in"></span> Administrador</a></li>
 	              <!--- <li class="dropdown">
 	                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sucursales <span class="caret"></span></a>
 	                <ul class="dropdown-menu">
