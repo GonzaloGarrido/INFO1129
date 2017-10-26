@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="jumbotron cuadrito">
+	<div class="jumbotron cuadrito" style="margin-top: 50px">
 		<form>
 			<div>
 			</div><br>

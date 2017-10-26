@@ -34,9 +34,9 @@
 	          <div class="collapse navbar-collapse" id="navbar-1">
 	            <ul class="nav navbar-nav navbar-right">
 	              <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-	              <li><a href="sucursales.php"><span class="glyphicon glyphicon-th-list"></span> Sucursales</a></li>
-	              <li><a href="nosotros.php"><span class="glyphicon glyphicon-user"></span> Nosotros</a></li>
-	              <li><a href="contacto.php"><span class="glyphicon glyphicon-phone-alt"></span> Contacto</a></li>
+	              <li><a href="index,php?m=sucursales"><span class="glyphicon glyphicon-th-list"></span> Sucursales</a></li>
+	              <li><a href="index.php?m=nosotros"><span class="glyphicon glyphicon-user"></span> Nosotros</a></li>
+	              <li><a href="index.php?m=contacto"><span class="glyphicon glyphicon-phone-alt"></span> Contacto</a></li>
 	              <li><a href="index.php?m=ayuda"><span class="glyphicon glyphicon-comment"></span> Ayuda</a></li>
 	              <li><a href="admin.php"><span class="glyphicon glyphicon-log-in"></span> Administrador</a></li>
 	              <!--- <li class="dropdown">

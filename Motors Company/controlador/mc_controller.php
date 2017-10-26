@@ -24,6 +24,12 @@
             include_once('vistas/footer.php');
         }
 
+        function nosotros(){
+            include_once('vistas/header.php');
+            include_once('vistas/nosotros.php');
+            include_once('vistas/footer.php');
+        }
+
         function estudiante(){
             $data=NULL;
             if(isset($_REQUEST['id'])){
