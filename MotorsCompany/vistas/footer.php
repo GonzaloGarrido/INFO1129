@@ -2,13 +2,13 @@
 		<div class="footer-left">
 			<h3>Speed Cars Chile<span> <img src="./style/img/logo.png" width="50" height="30"></span></h3>
 			<p class="footer-links">
-				<a href="#">Inicio</a>
+				<a href="index.php">Inicio</a>
 				·
-				<a href="#">Contacto</a>
+				<a href="index.php?m=contacto">Contacto</a>
 				·
-				<a href="#">Ayuda</a>
+				<a href="index.php?m=ayuda">Ayuda</a>
 				·
-				<a href="#">Administrador</a>
+				<a href="index.php?m=admin">Administrador</a>
 			</p>
 			<p class="footer-company-name"><span>Derechos Reservados</span> &copy; Motors Company</p>
 		</div>
@@ -38,7 +38,7 @@
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="https://github.com/GonzaloGarrido/INFO1129" target="_blank"><i class="fa fa-github"></i></a>
 			</div>
 		</div>
 	</footer>

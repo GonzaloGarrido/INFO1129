@@ -1,7 +1,6 @@
 <div class="container">
     <div class="jumbotron">
-        <h2>Estudiantes</h2>
-        
+        <h2>Estudiantes</h2>  
     </div>
     <div class="container">
         <table class="table table-bordered ">
@@ -31,5 +30,4 @@
             </tbody>
         </table>
     </div>
-    
 </div>

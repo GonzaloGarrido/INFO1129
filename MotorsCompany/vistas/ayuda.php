@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="jumbotron cuadrito" style="margin-top: 50px">
+	<div class="jumbotron cuadrito" style="margin: 10px auto; width: 700px; align-content: left; margin-top: 50px;">
 		<form>
 			<div>
 			</div><br>
@@ -11,7 +11,7 @@
 			</div><br>
 			<div class="input-group">
 				<span class="input-group-addon">
-					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-lock"></span>
 				</span>
 				<input class="form-control" type="text" id="FRM-rut" placeholder="RUT" required="">
 			</div><br>

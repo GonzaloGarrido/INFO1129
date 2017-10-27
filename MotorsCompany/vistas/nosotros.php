@@ -1,5 +1,9 @@
 <div class="container">
 	<br>
+	<div class="col-md-12" style="margin-top: 50px">
+		<h1><b>Speed Cars Chile</b></h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime corporis accusantium ea expedita! Quidem fuga consequatur repellendus eligendi possimus, temporibus deserunt ipsa iste vitae excepturi, tenetur sunt eum et!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime corporis accusantium ea expedita! Quidem fuga consequatur repellendus eligendi possimus, temporibus deserunt ipsa iste vitae excepturi, tenetur sunt eum et!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime corporis accusantium ea expedita! Quidem fuga consequatur repellendus eligendi possimus, temporibus deserunt ipsa iste vitae excepturi, tenetur sunt eum et!</p>
+	</div>
 	<div class="col-md-12">
 		<div id="carousel-1" class="carousel slide" data-ride="carousel" style="margin-top: 50px">
 			<!-- Indicadores -->
@@ -11,25 +15,28 @@
 			<!-- Contenedor de los slide -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="./style/img/SucursalVictoria.jpg" width="1200" height="400" class="img-responsive">
-					<div class="carousel-caption">
+					<h3><b>Sucursal Angol</b></h3>
+					<img src="./style/img/SucursalAngol.jpg" width="1200" height="400" class="img-responsive">
+					<!-- <div class="carousel-caption">
 						<h3>Este es nuestro Slide#1</h3>
 						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="item">
-					<img src="./style/img/SucursalAngol.jpg" width="1200" height="400" class="img-responsive">
-					<div class="carousel-caption">
+					<h3><b>Sucursal Temuco</b></h3>
+					<img src="./style/img/SucursalTemuco.jpg" width="1200" height="400" class="img-responsive">
+					<!-- <div class="carousel-caption">
 						<h3>Este es nuestro Slide#2</h3>
 						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
+					</div> -->
 				</div>
 				<div class="item">
+					<h3><b>Sucursal Victoria</b></h3>
 					<img src="./style/img/SucursalVictoria.jpg" width="1200" height="400" class="img-responsive">
-					<div class="carousel-caption">
+					<!-- <div class="carousel-caption">
 						<h3>Este es nuestro Slide#3</h3>
 						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- Controles -->

@@ -1,5 +1,5 @@
 <?php 
-    require_once('modelo/estudiante_model.php');
+    require_once('modelo/mc_model.php');
 
     class estudiante_controller{
 
@@ -15,6 +15,30 @@
 
             include_once('vistas/header.php');
             include_once('vistas/index.php');
+            include_once('vistas/footer.php');
+        }
+
+        function sucursales(){
+            include_once('vistas/header.php');
+            include_once('vistas/sucursales.php');
+            include_once('vistas/footer.php');
+        }
+
+        function nosotros(){
+            include_once('vistas/header.php');
+            include_once('vistas/nosotros.php');
+            include_once('vistas/footer.php');
+        }
+
+        function contacto(){
+            include_once('vistas/header.php');
+            include_once('vistas/contacto.php');
+            include_once('vistas/footer.php');
+        }
+
+        function ayuda(){
+            include_once('vistas/header.php');
+            include_once('vistas/ayuda.php');
             include_once('vistas/footer.php');
         }
 
@@ -38,11 +62,9 @@
             $data['sexo']=$_REQUEST['txt_sexo'];
             $data['fechanacimiento']=$_REQUEST['txt_fechanacimiento'];
             $data['asignatura']=$_REQUEST['txt_asignatura'];
-           if ($_REQUEST['nombres']=="") {
-                $this->model_e->create($data);
-            }
-    
-
+            include_once('vistas/header.php');
+            include_once('vistas/estudiante.php');
+            include_once('vistas/footer.php');
     }
 }
 ?>
