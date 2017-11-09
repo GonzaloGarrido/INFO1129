@@ -8,7 +8,7 @@
 				·
 				<a href="index.php?m=ayuda">Ayuda</a>
 				·
-				<a href="index.php?m=admin">Administrador</a>
+				<a href="index.php?m=administrador">Administrador</a>
 			</p>
 			<p class="footer-company-name"><span>Derechos Reservados</span> &copy; Motors Company</p>
 		</div>

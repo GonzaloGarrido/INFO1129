@@ -1,4 +1,3 @@
-
 <div class="container" style="margin:40px auto;">
 	<div class="row" style="width: 80%;margin: 50px auto;">
 		<div class="col-md-4 col-xs-4 col-sm-4" style="margin: 30px auto;">

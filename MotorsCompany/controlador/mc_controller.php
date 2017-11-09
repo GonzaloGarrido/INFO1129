@@ -1,13 +1,13 @@
 <?php 
     require_once('modelo/mc_model.php');
 
-    class estudiante_controller{
+    class mc_controller{
 
         private $model_e;
         private $model_p;
 
         function __construct(){
-            $this->model_e=new estudiante_model();
+            $this->model_e=new mc_model();
         }
 
         function index(){
@@ -42,6 +42,31 @@
             include_once('vistas/footer.php');
         }
 
+        function administrador() {
+            include_once('vistas/header.php');
+            include_once('vistas/administrador.php');
+            include_once('vistas/footer.php');    
+        }
+
+        function registro_admin() {
+            include_once('vistas/header.php');
+            include_once('vistas/registro_admin.php');
+            include_once('vistas/footer.php');    
+        }
+
+        function nuevo_admin() {
+            $usuario = $_REQUEST["FRMusuario"];
+            $clave = $_REQUEST["FRMclave"];
+            $sucursal = $_REQUEST["FRMsucursal"];
+            $email = $_REQUEST["FRMemail"];
+            //$sucIngreso = $this->model_e->CodSucursal($sucursal);
+            $datos = [$usuario,$clave,$sucursal,$email];
+            $this->model_e->NuevoAdmin($datos);
+            include_once('vistas/header.php');
+            include_once('vistas/registro_admin.php');
+            include_once('vistas/footer.php');
+        }
+
         function estudiante(){
             $data=NULL;
             if(isset($_REQUEST['id'])){
@@ -62,6 +87,10 @@
             $data['sexo']=$_REQUEST['txt_sexo'];
             $data['fechanacimiento']=$_REQUEST['txt_fechanacimiento'];
             $data['asignatura']=$_REQUEST['txt_asignatura'];
+           //if ($_REQUEST['nombres']=="") {
+                $this->model_e->create($data);
+            //}
+
             include_once('vistas/header.php');
             include_once('vistas/estudiante.php');
             include_once('vistas/footer.php');
