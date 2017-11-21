@@ -30,7 +30,7 @@
             $nfilas = $this->DB->query($sqlCod);
             return $nfilas;
         }
-
+        /* SECCIÓN DE ADMINISTRADORES */
         function NuevoAdmin($datos) {
             $this->DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO administradores(USUARIO,CLAVE,SUCURSAL,EMAIL) VALUES(?,?,?,?)";
@@ -40,12 +40,24 @@
         }
 
         function IngresoAdmin($datos) {
-            $sql = "SELECT * FROM administradores WHERE USUARIO='Rafael Fuentealba' AND CLAVE='12345'";
+            $usuario = $datos[0];
+            $clave = $datos[1];
+            $sql = "SELECT COD_ADMIN FROM administradores WHERE USUARIO='$usuario' AND CLAVE='$clave'";
             $query = $this->DB->query($sql);
-            $result = false;
-            $nfilas = mysqli_num_rows($query);
-            if($nfilas>0) echo "<script> alert('Hola') </script>";
-            else echo "<script> alert('Mundo') </script>";
+            $row = $query->rowCount();
+            if($row > 0) {
+                $aDatos = [$usuario,$clave];
+                return $aDatos;
+            }
+            /*if($query->fetchColumn()>0) {
+                foreach ($query as $row) {
+                    $cod = $row["COD_ADMIN"];
+                    echo "<script> alert($cod) </script>"; 
+                }
+            }*/ 
+            else { 
+                return null;
+            } 
         }
     }
 

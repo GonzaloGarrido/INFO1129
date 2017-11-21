@@ -37,5 +37,27 @@
             include_once('vistas/ayuda.php');
             include_once('vistas/footer.php');
         }
+
+        function registrar_ayuda() {
+            $nombre = $_REQUEST["FRMnombre"];
+            $email = $_REQUEST["FRMemail"];
+            $asunto = $_REQUEST["FRMasunto"];
+            $sucursal = $_REQUEST["FRMsucursal"];
+            $comentario = $_REQUEST["FRMcomentario"];
+            $aDatos = [$nombre,$email,$asunto,$sucursal,$comentario];
+            $resultado = $this->model_p->RegistrarAyuda($aDatos);
+            if($resultado!=null) {
+                echo "<script> alert('Tu mensaje ha sido enviado'); </script>";
+                include_once('vistas/header.php');
+                include_once('vistas/ayuda.php');
+                include_once('vistas/footer.php');
+            }
+            else {
+                echo "<script> alert('Ha ocurrido un error, inténtalo nuevamente'); </script>";
+                include_once('vistas/header.php');
+                include_once('vistas/ayuda.php');
+                include_once('vistas/footer.php');
+            }
+        }
     }
 ?>

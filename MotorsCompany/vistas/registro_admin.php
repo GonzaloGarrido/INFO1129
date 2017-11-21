@@ -1,11 +1,11 @@
 <script>
 	function RegistrarAdmin() {
 		var formAdmin = document.getElementById("form-r-ad");
-		var usuario = document.getElementById("FRM-usuario");
-		var clave = document.getElementById("FRM-clave");
-		var sucursal = document.getElementById("FRM-sucursal");
-		var email = document.getElementById("FRM-email");
-		if(usuario!=null && clave!=null && sucursal!=null && email!=null) {
+		var usuario = $("#FRM-usuario").val();
+		var clave = $("#FRM-clave").val();
+		var sucursal = $("#FRM-sucursal").val();
+		var email = $("#FRM-email").val();
+		if(usuario!="" && clave!="" && sucursal!="" && email!="") {
 			formAdmin.submit();
 			alert("Administrador Registrado");
 		}
@@ -41,7 +41,7 @@
 				<select class="form-control" id="FRM-sucursal" name="FRMsucursal" required="">
   					<option value="1">Angol</option>
   					<option value="2">Temuco</option>
-  					<option value="2">Victoria</option>
+  					<option value="3">Victoria</option>
 				</select>
 			</div><br>
 			<div class="input-group">
@@ -50,7 +50,7 @@
 				</span>
 				<input class="form-control" type="email" id="FRM-email" name="FRMemail" placeholder="Email" required="" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
 			</div><br>
-			<center><input class="btn btn-success" name="login" value="Registrar" onclick="RegistrarAdmin()"></center>
+			<center><input type="button" class="btn btn-success" name="login" value="Registrar" onclick="RegistrarAdmin()"></center>
 			<div class="input-text"><h6><center><a href="index.php?m=administrador" id="recover-pass">Iniciar sesión</a></center></h6></div>
 		</form>
 	</div></center>

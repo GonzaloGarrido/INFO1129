@@ -43,10 +43,17 @@
             $usuario = $_REQUEST["FRMusuario"];
             $clave = $_REQUEST["FRMclave"];
             $aDatos = [$usuario,$clave];
-            $this->model_e->IngresoAdmin($aDatos);
-            include_once('vistas/header.php');
-            include_once('vistas/administrador.php');
-            include_once('vistas/footer.php');
+            $dato = $this->model_e->IngresoAdmin($aDatos);
+            if($dato!=null) {
+                include_once('vistas/header.php');
+                include_once('vistas/index.php');
+                include_once('vistas/footer.php');
+            }
+            else {
+                include_once('vistas/header.php');
+                include_once('vistas/administrador.php');
+                include_once('vistas/footer.php');
+            }
         }
 
         function estudiante(){

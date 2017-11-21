@@ -1,11 +1,11 @@
 <script>
 	function IngresoAdmin() {
-		var formAdmin = document.getElementById("form-in-ad-ad");
-		var usuario = document.getElementById("FRM-usuario");
-		var clave = document.getElementById("FRM-clave");
-		if(usuario!=null && clave!=null) {
+		var formAdmin = document.getElementById("form-in-ad");
+		var usuario = $("#FRM-usuario").val();
+		var clave = $("#FRM-clave").val();
+		if(usuario!="" && clave!="") {
 			formAdmin.submit();
-			alert("Sesion Iniciada");
+			alert("Credenciales erróneas o no encontradas");
 		}
 		else { alert("Complete los datos"); }
 	}
