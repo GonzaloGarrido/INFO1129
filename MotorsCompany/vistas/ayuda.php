@@ -18,7 +18,7 @@
 </script>
 
 <div class="container">
-	<div class="jumbotron cuadrito" style="margin: 10px auto; width: 700px; align-content: left; margin-top: 50px;">
+	<div class="jumbotron cuadrito" style="margin: 10px auto; width: 700px; align-content: left; margin-top: 100px;">
 		<center><h2 style="color:blue"><b>Formulario de Ayuda</b></h2></center><br>
 		<label style="color:red"><b>La misión de Speed Cars Chile es hacerte llegar un mejor servicio, y para ello te traemos otro medio donde puedes entregarnos tu opinión acerca de nuestra empresa, tu comentario, dudas, consultas, sugerencias, reclamos u otros. Para todo lo anterior te pedimos que completes el siguiente formulario, esta información es confidencial y solo será usada con fines administrativos. Atenderemos lo más prontamente tu mensaje y te responderemos vía correo electrónico</b></label><br><br>
 		<form action="index.php?m=registrar_ayuda" method="POST" id="form-ayuda">
