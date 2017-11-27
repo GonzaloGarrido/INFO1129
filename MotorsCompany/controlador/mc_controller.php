@@ -15,6 +15,7 @@
         }
 
         function sucursales(){
+            $resultado = $this->model_p->DatosSucursal();
             include_once('vistas/header.php');
             include_once('vistas/sucursales.php');
             include_once('vistas/footer.php');
